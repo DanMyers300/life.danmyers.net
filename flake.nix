@@ -10,11 +10,14 @@
     devShell.${system} = pkgs.mkShell {
       name = "wasm-game-of-life";
       buildInputs = with pkgs; [
+      # dev
         rustc
         cargo
         cargo-generate
-        nodejs_23
+        nodejs
         wasm-pack
+      # build
+        lld_19
       ];
     };
   };
