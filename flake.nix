@@ -18,6 +18,7 @@
         wasm-pack
       # build
         lld_19
+        typescript
       ];
     };
   };
