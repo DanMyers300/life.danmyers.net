@@ -2,13 +2,14 @@ import { Universe } from "wasm-game-of-life";
 import { memory } from "wasm-game-of-life/wasm_game_of_life_bg";
 
 const CELL_SIZE = 5;
-const GRID_COLOR = "#CCCCCC";
-const DEAD_COLOR = "#FFFFFF";
-const ALIVE_COLOR = "#000000";
+//const GRID_COLOR = "#CCCCCC";
+const GRID_COLOR = "#000000";
+const ALIVE_COLOR = "#FFFFFF";
+const DEAD_COLOR = "#000000";
 
 // In order to use width/height we need to up the memory
-const width = 64;//Math.floor((window.innerWidth - 1) / (CELL_SIZE + 1));
-const height = 64;//Math.floor((window.innerHeight - 1) / (CELL_SIZE + 1));
+const width = Math.floor((window.innerWidth - 1) / (CELL_SIZE + 1));
+const height = Math.floor((window.innerHeight - 1) / (CELL_SIZE + 1));
 
 // Construct the universe, and get its width and height.
 const universe = (Universe as any).new(width, height);
@@ -27,7 +28,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 const renderLoop = async () => {
   universe.tick();
-  await sleep(75)
+  await sleep(200)
   drawGrid();
   drawCells();
 

@@ -58,11 +58,11 @@ impl Universe {
     self.cells = next;
   }
 
-  pub fn new() -> Universe {
-      let width = 64;
-      let height = 64;
-  
-      let size = (width * height) as usize;
+  pub fn new(w: u32, h: u32) -> Universe {
+      let width = w;
+      let height = h;
+
+      let size = (w * h) as usize;
       let mut cells = FixedBitSet::with_capacity(size);
   
       for i in 0..size {
@@ -87,7 +87,8 @@ impl Universe {
 
   pub fn set_width(&mut self, width: u32) {
     self.width = width;
-    self.cells = (0..width * self.height).map(|_i| 0).collect();
+    let size = (width * self.height) as usize;
+    self.cells = FixedBitSet::with_capacity(size);
   }
 
   pub fn height(&self) -> u32 {
@@ -96,7 +97,8 @@ impl Universe {
 
   pub fn set_height(&mut self, height: u32) {
     self.height = height;
-    self.cells = (0..self.width * height).map(|_i| 0).collect();
+    let size = (self.width * height) as usize;
+    self.cells = FixedBitSet::with_capacity(size);
   }
 
   pub fn cells(&self) -> *const u32 {
