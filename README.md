@@ -1,8 +1,8 @@
 # 🧬 life.danmyers.net 🧬
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Rust](https://img.shields.io/badge/Rust-54.9%25-orange.svg)](https://www.rust-lang.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-24.3%25-blue.svg)](https://www.typescriptlang.org/)
+[![Rust](https://img.shields.io/badge/Rust-58.2%25-orange.svg)](https://www.rust-lang.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-28.3%25-blue.svg)](https://www.typescriptlang.org/)
 [![WebAssembly](https://img.shields.io/badge/WebAssembly-Powered-purple.svg)](https://webassembly.org/)
 
 A high-performance implementation of Conway's Game of Life using Rust compiled to WebAssembly with a TypeScript frontend.
