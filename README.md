@@ -11,9 +11,8 @@ A high-performance implementation of Conway's Game of Life using Rust compiled t
 
 - 🚀 **High Performance**: Rust-powered simulation logic compiled to WebAssembly
 - 🔢 **Bit Array Implementation**: Efficient memory usage with bit arrays controlling cell states
-- 🖥️ **Modern UI**: Clean, responsive interface built with TypeScript
+- 🖥️ **Modern UI**: Clean, darkmode interface built with TypeScript
 - 📱 **Responsive**: Works on desktop and mobile devices
-- 🎨 **Customizable**: Multiple color themes and grid options
 - ⚙️ **Nix-powered Development**: Reproducible builds using Nix flakes
 
 ## 🔍 Live Demo
@@ -27,21 +26,17 @@ Check out the live version at [life.danmyers.net](https://life.danmyers.net)
 - **Build System**: Nix flake for reproducible development environment
 - **Tooling**: Cargo for Rust package management
 
-## 📸 Screenshots
-
-*[Consider adding screenshots or GIFs of your application here showing different patterns and the UI]*
-
 ## 🏁 Getting Started
 
 ### Prerequisites
 
-- Nix package manager (for using the development environment)
+- Nix package manager (optional)
 - Rust toolchain
-- Node.js and npm/yarn
+- Node.js and npm
 - wasm-pack
 
 ### Installation
-
+```markdown
 # Clone the repository
 git clone https://github.com/DanMyers300/life.danmyers.net.git
 cd life.danmyers.net
@@ -58,6 +53,7 @@ npm install
 
 # Start the development server
 npm start
+```
 
 ## 📚 About Conway's Game of Life
 
