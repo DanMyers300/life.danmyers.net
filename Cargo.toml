@@ -1,6 +1,6 @@
 [package]
-name = "wasm-game-of-life"
-version = "0.1.0"
+name = "life-danmyers-net"
+version = "0.1.4"
 authors = ["dan <contact@danmyers.net>"]
 edition = "2018"
 
