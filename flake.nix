@@ -20,9 +20,6 @@
         lld_19
         typescript
       ];
-    shellHook = ''
-      cd www && npm run start
-    '';
     };
   };
 }

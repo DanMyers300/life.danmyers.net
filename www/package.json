@@ -4,8 +4,9 @@
   "description": "Game of Life",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "start": "wasm-pack build && tsc && NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server"
+    "build": "npx webpack --mode production",
+    "start": "wasm-pack build && tsc && NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server",
+    "deploy": "gh-pages -d ../dist"
   },
   "repository": {
     "type": "git",
@@ -20,14 +21,15 @@
   "author": "Dan Myers",
   "license": "(MIT)",
   "dependencies": {
-    "typescript": "^5.8.2",
-    "life-danmyers-net": "file:../pkg"
+    "gh-pages": "^6.3.0",
+    "life-danmyers-net": "file:../pkg",
+    "typescript": "^5.8.2"
   },
   "devDependencies": {
     "@types/node": "^22.13.10",
     "copy-webpack-plugin": "^5.0.0",
     "hello-wasm-pack": "^0.1.0",
-    "webpack": "^4.29.3",
+    "webpack": "^4.47.0",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.5"
   }
